@@ -1,0 +1,48 @@
+ $color:rgba(0,123,191,1);
+.padding{
+	padding:10px;
+	margin:0;
+}
+
+ header .navbar{
+	background-color: $color;
+}
+.publications{
+		tr{
+			border-bottom: 1px solid $color;
+		}
+		tr:last{
+			border-bottom:none;
+		}
+}
+header h1.title{
+	@extend .padding;
+}
+
+.socialbox{
+	position:absolute;
+	right: 0;
+	top:0;
+	@extend .padding;
+	background: #fff;
+	a{
+		font-size: 30px;
+		color:#ccc;
+		display: inline-block;
+
+	}
+	a:hover{
+		color:#333;
+	}
+}
+
+@media screen and (max-width : 576px) {
+	.socialbox{
+		position: fixed;
+		top:initial;
+		bottom:100px;
+		a{
+			display: block;
+		}
+	}
+}

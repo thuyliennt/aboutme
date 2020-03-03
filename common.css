@@ -1,0 +1,33 @@
+@import url('style.css');
+*{
+	box-sizing: border-box;
+}
+.container{
+	margin-top: 20px;
+}
+#avatar{
+	border:1px solid #ccc;
+	padding: 3px;
+	border-radius: 50%;
+}
+
+.navbar-brand{
+		display: none;
+	}
+
+@media screen and (max-width : 860px) {
+	header h1.title{
+		font-size: 30px;
+	}
+}
+@media screen and (max-width : 576px) {
+	header h1.title{
+		display: none;
+		height: 0;
+		padding: 0;
+		margin:0;
+	}
+	.navbar-brand{
+		display: inherit;
+	}
+}

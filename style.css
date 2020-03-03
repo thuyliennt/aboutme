@@ -1,0 +1,33 @@
+.padding, header h1.title, .socialbox {
+  padding: 10px;
+  margin: 0; }
+
+header .navbar {
+  background-color: #007bbf; }
+
+.publications tr {
+  border-bottom: 1px solid #007bbf; }
+.publications tr:last {
+  border-bottom: none; }
+
+.socialbox {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #fff; }
+  .socialbox a {
+    font-size: 30px;
+    color: #ccc;
+    display: inline-block; }
+  .socialbox a:hover {
+    color: #333; }
+
+@media screen and (max-width: 576px) {
+  .socialbox {
+    position: fixed;
+    top: initial;
+    bottom: 100px; }
+    .socialbox a {
+      display: block; } }
+
+/*# sourceMappingURL=style.css.map */
